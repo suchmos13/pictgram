@@ -73,4 +73,4 @@ gem "jquery-rails"
 
 gem 'bcrypt'
 
-gem "crrierwave"
+gem "carrierwave"

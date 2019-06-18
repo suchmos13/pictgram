@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
   
   
   def log_out
-    sesstion.delete(:user_id)
+    session.delete(:user_id)
     @current_user = nil
   end 
   

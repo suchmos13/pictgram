@@ -8,5 +8,6 @@ class Topic < ApplicationRecord
   
   mount_uploader :image, ImageUploader
   
+  had_many :favorites
   
 end

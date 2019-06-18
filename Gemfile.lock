@@ -89,8 +89,6 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    crrierwave (1000.0.0)
-      carrierwave (~> 0)
     debug_inspector (0.0.3)
     erubi (1.8.0)
     execjs (2.7.0)
@@ -243,9 +241,9 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   capybara (>= 2.15, < 4.0)
+  carrierwave
   chromedriver-helper
   coffee-rails (~> 4.2)
-  crrierwave
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)

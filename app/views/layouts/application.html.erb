@@ -22,7 +22,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
           <il>
-            <%= link_to "#" do %>
+            <%= link_to "favorites_index" do %>
             <%= image_tag "icons/heart.png" %>
             <% end %>
           </il>
@@ -34,6 +34,7 @@
           </il>
           <il>
             <%= link_to logout_path, method: :delete do %>
+             <%= image_tag "icons/logout.png" %>
              <% end %>
           </il>
           <% else %>
