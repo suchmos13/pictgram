@@ -1,5 +1,4 @@
 class FavoritesController < ApplicationController
-  class FavoritesController < ApplicationController
     def index
       @favorite_topics = current_user.favorite_topics
     end
@@ -15,6 +14,6 @@ class FavoritesController < ApplicationController
         redirect_to topics_path, danger: 'お気に入りに登録に失敗しました'
       end
     end
-  end
-
 end
+
+
