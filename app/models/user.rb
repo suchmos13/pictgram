@@ -16,6 +16,6 @@ has_many :topics
 has_many :favorites
 has_many :favorite_topics, through: :favorites, source: 'topic'
 has_many :contents
-
+has_many :contents_topics, through: :contents, source: 'topic'
 
 end

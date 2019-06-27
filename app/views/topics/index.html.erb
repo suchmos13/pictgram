@@ -13,13 +13,19 @@
                 <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
               <% end %>
             <% end %>
-            <%= link_to contents_path(topic_id: topic.id), method: :post do %>
+            <%= link_to contents_new_path(topic_id: topic.id) do %>
               <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>
             <p class="topic-text">
               <%= topic.description %>
             </p>
           </div>
+          <h2>comment</h2>
+          <p class= "topic-text">
+            <% topic.contents.each do |content| %>
+              <%= content.comment %>
+            <% end %>    
+          </p>
         </div>
       </div>
     <% end %>

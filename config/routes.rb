@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   get 'topics/new'
   get 'sessions/new'
   get 'users/new'
-  get 'contents/new'
+ 
+ get 'contents/index'
+ get 'contents/new'
+ post '/contents', to: 'contents#create'
+ 
   
   root 'pages#index'
   get 'pages/help'
@@ -10,10 +14,11 @@ Rails.application.routes.draw do
   resources :users
   resources :topics
   
+  
   get 'favorites/index'
   post 'favorites', to: 'favorites#create'
   
-  post  'contents', to: 'contents#create'
+
   
   
   get   '/login',   to: 'sessions#new'

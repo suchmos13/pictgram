@@ -63,5 +63,7 @@
         $(".alert").fadeOut(5000):
       });
     </script>
+    <%= debug(params) if Rails.env.deveropment? %>
+    <%= debug @contents if Rails.env.deveropment? %>
   </body>
 </html>

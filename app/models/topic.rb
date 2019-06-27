@@ -11,5 +11,6 @@ class Topic < ApplicationRecord
   has_many :favorites
   has_many :favorite_users, through: :favorites, source: 'user'
   has_many :contents
+  has_many :content_users, through: :contents, source: 'user'
   
 end
