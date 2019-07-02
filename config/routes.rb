@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   
   get 'favorites/index'
   post 'favorites', to: 'favorites#create'
-  
+  # resourcesを使うとわけわからなくなってしまうので自分で作る。HTTPリクエスト：DELETE　アクション:destroy
+  delete 'favorites', to: 'favorites#destroy' 
 
   
   
