@@ -14,6 +14,7 @@
             <%= f.text_area :description, class: 'form-control' %>
           
           </div>
+          <%# ログインしていないと投稿ボタンが用事できないようにする。applocation_controllerのlogged_inあくしょんから!current_user.nil?をひっぱってくる%>
           <% if !current_user.nil? %>
           <%= f.submit '投稿', class: 'btn btn-block btn-block' %>
           <% end %>
